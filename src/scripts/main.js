@@ -94,6 +94,7 @@ class GameFild {
       el.classList.add(`field-cell--${el.textContent}`);
     });
   }
+
   // add new cell with 2 or 4, if it is possible
   addNew() {
     if (!this.gameFild.includes(null)) {
@@ -135,6 +136,7 @@ class GameFild {
 
     this.addNew();
   }
+
   // addition of the nearest cell if they are equal
   sumCells(arr, method) {
     for (let i = arr.length - 1; i > 0; i--) {
